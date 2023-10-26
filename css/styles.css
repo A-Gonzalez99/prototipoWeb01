@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    max-height: 100%;
+    
+    box-sizing: content-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    /*
+    border: 1px solid rgba(122, 118, 151, 0.77);
+    */
+}
+
+/* Container - Panles*/
+.container-top-desk {
+    position: fixed;
+    max-width: 100%;
+    z-index: 0;
+    visibility: hidden;
+}
+
+.menu-mobile{
+    width: 100vw;
+    height: 210vw;
+    margin-top: -127vw;
+    background-color: rgb(18, 18, 18);
+    z-index: 1;
+    visibility: hidden;
+}
+
+.menu-mobile td{
+    max-height: 95vw;
+}
+
+.menu-mobile h4{
+    color: #f6f6f6;
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+.container-top-mobile {
+    position: fixed;
+    max-width: 100%;
+    z-index: 2;
+    visibility: visible;
+}
+
+.container-medium {
+    width: 100vw;
+    max-width: 100%;
+}
+
+.container-low {
+    width: 100vw;
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 100%;
+    margin-top: 0.5vw;
+}
+
+.container-low td {
+    font-size: 0.9vw;
+}
+
+.container-low td {
+    width: 100vw;
+    text-align: center;
+    border-bottom: 0.5vw solid transparent;
+}
+
+.container-low div {
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container-low p {
+    color: rgb(66, 66, 69);
+    font-weight: 400;
+    text-align: left;
+    font-size: 8px;
+    width: 100%;
+}
+
+.container-low h4 {
+    width: 100%;
+    font-size: 8px;
+    font-weight: 500;
+    text-align: left;
+    color: rgb(29, 29, 31);
+}
+
+.container-medium-2 {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5vw;
+    justify-content: space-evenly;
+}
+
+.container-medium-2-banner {
+    width: 100vw;
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.container-medium-2-banner div {
+    width: 100vw;
+    display: flex;
+    max-width: 100%;
+    margin-right: 0.5vw;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.container-medium-2-banner img {
+    width: 100vw;
+    max-width: 100%;
+    margin-top: 0.5vw;
+    align-items: center;
+}
+
+.container-lower {
+    height: 32px;
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+}
+
+.container-lower p {
+    font-size: 8px;
+}
+
+.container-lower div {
+    display: flex;
+    flex-direction: row;
+    width: 95vw;
+    max-width: 100%;
+
+}
+
+.container-text {
+    width: 50vw;
+    text-align: center;
+}
+
+.container-menu {
+    width: 100vw;
+    max-width: 100%;
+}
+
+.container-menu table {
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: space-evenly;
+}
+
+.container-menu td {
+    font-weight: 500;
+    font-size: 1.3vh;
+    margin-left: auto;
+    margin-right: auto;
+    visibility: visible;
+    border-top: 12px solid transparent;
+    border-right: 3vb solid transparent;
+    border-left: .75vw solid transparent;
+    border-bottom: 12px solid transparent;
+}
+
+.container-menu p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(208,208,208);
+}
+
+.container-menu i:hover {
+    color: rgb(245,245,247);
+}
+
+.container-menu i {
+    font-size: 12px;
+    text-align: center;
+    color: rgb(208,208,208);
+}
+
+.container-banner {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: space-evenly;
+}
+
+.container-banner img {
+    width: 100vw;
+}
+
+.container-text table {
+    width: 50vw;
+}
+
+.container-text td {
+    width: 50vw;
+}
+
+.container-low-margin-1 {
+    border-color: rgb(245, 245, 247);
+    border-right: 5vw solid rgb(245, 245, 247);
+}
+
+.container-low-margin-2 {
+    width: 100vw;
+    border-left: 5vw solid transparent;
+    border-color: rgb(245, 245, 247);
+    background-color: rgb(245, 245, 247);
+}
+
+.marquee {
+    width: 100vw;
+    display: block;
+    position: relative;
+    animation-name: scroll;
+    animation-duration: 42700ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+    0% {
+        left: -25%;
+    }
+
+    100% {
+        left: -440%;
+    }
+}
+
+.panel-sing {
+    width: 100vw;
+    padding: 3px;
+    display: flex;
+    overflow: visible;
+}
+
+.panel-sing div {
+    width: 100%;
+    margin-top: 0.5%;
+    margin-right: 1%;
+}
+
+.panel-sing img {
+    height: 100vw;
+    background-color: #f6f6f6;
+}
+
+/* Sing */
+.sing-normal {
+    z-index: 1;
+    opacity: 100%;
+}
+
+.sing-normal-op {
+    z-index: 1;
+    opacity: 50%;
+}
+
+.sing-efect-op {
+    z-index: 1;
+    opacity: 0.5;
+    transform: scale(100%);
+    animation: frameOp 2s ease 1;
+}
+
+.sing-efect-normal {
+    z-index: 1;
+    transform: scale(101%);
+    animation: frameNormal 2s ease 1;
+}
+
+
+@keyframes frameNormal {
+    0% {
+        opacity: 0.5;
+        transform: scale(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(101%);
+    }
+}
+
+@keyframes frameOp {
+    0% {
+        opacity: 1;
+        transform: scale(101%);
+    }
+
+    100% {
+        opacity: 0.5;
+        transform: scale(100%);
+    }
+}
+
+/* Slider */
+.slider-menu {
+    z-index: 1;
+    width: 100vw;
+    height: 100vw;
+    display: table;
+    overflow-x: clip;
+    margin-top: -20PX;
+    visibility: hidden;
+    justify-content: space-evenly;
+    background-color: rgba(18, 18, 18, 0.93);
+    
+}
+
+.slider-menu i {
+    width: 20px;
+    height: 20px;
+    margin-top: 2vi;
+    margin-left: 30%;
+    text-align: right;
+    margin-bottom: 25vi;
+}
+
+.slider-menu form {
+    width: 100vw;
+    display: flex;
+    height: 100vw;
+}
+
+.slider-menu input {
+    size: 100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    outline: none;
+    color: white;
+    font-weight: 500;
+    font-size: large;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 0px solid rgb(247, 247, 247);
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+.libreria-web {
+    height: 0vw;
+    visibility: hidden;
+}
+
+.libreria-mobile {
+    height: 100vw;
+    visibility: visible;
+}
+
+/* Text, Color...*/
+.text-center {
+    text-align: center;
+}
+
+.color-texto-menu {
+    filter: blur(0);
+    visibility: hidden;
+    color: rgb(245,245,247);
+}
+
+.color-texto-menu:hover {
+    color: white;
+    filter: blur(0);
+}
+
+.color-background-1 {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.color-background-1 h1 {
+    color: white;
+}
+
+.color-background-1 h2 {
+    color: white;
+    font-weight: 500;
+}
+
+.color-background-2 {
+    background-color: rgba(110, 190, 48, 0.526);
+}
+
+.color-background-3 {
+    background-color: rgba(18, 18, 18, 0.977);
+}
+
+.color-background-4 {
+    background-color: rgb(245, 245, 247);
+}
+
+.color-background-4 h1 {
+    color: rgb(29, 29, 31);
+}
+
+.color-background-4 h2 {
+    font-weight: 500;
+    color: rgb(29, 29, 31);
+}
+
+h3 {
+    width: 300;
+    font-weight: 400;
+    color: rgb(0, 102, 204);
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.error {
+    width: 100vw;
+    height: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container-medium-2-banner {
+        width: 100vw;
+        display: flex;
+        max-width: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .container-top-movil {
+        z-index: 2;
+        width: 100vw;
+        max-width: 100%;
+        position: fixed;
+        visibility: visible;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    .libreria-web {
+        height: auto;
+        visibility: visible;
+    }
+
+    .libreria-mobile {
+        height: 0vw;
+        visibility: hidden;
+    }
+
+    .panel-sing img {
+        height: 35vw;
+        background-color: #f6f6f6;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .container-top-web {
+        z-index: 0;
+        width: 100vw;
+        position: fixed;
+        max-width: 100%;
+        visibility: hidden;
+    }
+
+    .container-top-mobile {
+        z-index: 2;
+        width: 100vw;
+        max-width: 100%;
+        position: fixed;
+        visibility: visible;
+    }
+
+    .container-low p {
+        width: 100%;
+        font-size: 12px;
+        text-align: left;
+        font-weight: 400;
+        color: rgb(66, 66, 69);
+    }
+
+    .container-low h4 {
+        width: 100%;
+        font-size: 12px;
+        font-weight: 500;
+        text-align: left;
+        color: rgb(29, 29, 31);
+    }
+
+    .container-lower p {
+        font-size: 12px;
+    }
+
+    .container-low-margin-1 {
+        width: 100vw;
+        margin-top: 0.5vw;
+        margin-right: 1000px solid transparent;
+        background-color: rgb(245, 245, 247);
+    }
+
+    .container-low-margin-2 {
+        margin-top: 0.5vw;
+        margin-left: 1000px solid transparent;
+        background-color: rgb(245, 245, 247);
+    }
+
+    .container-lower div{
+        width: auto;
+    }
+
+    .slider-menu {
+        z-index: 1;
+        width: 100vw;
+        height: auto;
+        display: flex;
+        overflow-x: clip;
+        margin-top: -15px;
+        visibility: hidden;
+        justify-content: space-evenly;
+        background-color: rgba(18, 18, 18, 0.93);
+    }
+    
+    .menu-mobile{
+    z-index: 1;
+    width: 100vw;
+    height: 200vw;
+    margin-top: -19vh;
+    visibility: hidden;
+    background-color: rgb(18, 18, 18);
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container-top-desk {
+        z-index: 2;
+        width: 100vw;
+        position: fixed;
+        max-width: 100%;
+        visibility: visible;
+    }
+
+    .container-top-mobile {
+        z-index: 0;
+        width: 100vw;
+        position: fixed;
+        max-width: 100%;
+        visibility: hidden;
+    }
+
+    .color-texto-menu {
+        filter: blur(0);
+        visibility: visible;
+        color: rgb(245,245,247);
+    }
+
+    .slider-menu {
+        z-index: 1;
+        height: 12vh;
+        width: 100vw;
+        display: flex;
+        margin-top: 0PX;
+        overflow-x: clip;
+        visibility: hidden;
+        justify-content: space-evenly;
+        background-color: rgba(18, 18, 18, 0.93);
+    }
+
+    .menu-mobile{
+        z-index: 1;
+        width: 100vw;
+        height: 200vw;
+        margin-top: -30vh;
+        visibility: hidden;
+        background-color: rgb(18, 18, 18);
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

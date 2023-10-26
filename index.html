@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Art Tech</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/5d2931d4ec.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="img/codepen.svg">
+</head>
+
+<body>
+    <!--\/ Menu Desk \/ -->
+    <div class="container-top-desk">
+        <div class="color-background-3">
+            <div class="container-menu">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <i class="fa-solid fa-house" id="house-button-id"></i>
+                            </td>
+                            <td id="meuTd2">
+                                <p class="color-texto-menu" id="store-button-id">Tienda</p>
+                            </td>
+                            <td>
+                                <p class="color-texto-menu">Mac</p>
+                            </td>
+                            <td>
+                                <p class="color-texto-menu">iPad</p>
+                            </td>
+                            <td>
+                                <p class="color-texto-menu">iPhone</p>
+                            </td>
+                            <td>
+                                <p class="color-texto-menu">Wach</p>
+                            </td>
+                            <td>
+                                <p class="color-texto-menu">AirPods</p>
+                            </td>
+                            <td>
+                                <p class="color-texto-menu">TV y Casa</p>
+                            </td>
+                            <td>
+                                <p class="color-texto-menu">Entretenimiento</p>
+                            </td>
+                            <td>
+                                <p class="color-texto-menu">Accesorios</p>
+                            </td>
+                            <td>
+                                <p class="color-texto-menu">Soporte</p>
+                            </td>
+                            <td>
+                                <i class="fa-solid fa-magnifying-glass" id="searcher-button-id"></i>
+                            </td>
+                            <td>
+                                <i class="fa-regular fa-user"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!--\/ Menu Searcher \/ -->
+        <div style="flex-direction: column;">
+            <div class="slider-menu" id="slider-bar-id">
+                <div style="margin-left: 50vw;"></div>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass" style="color: white;"></i>
+                </div>
+
+                <div style="height: 100vw;">
+                    <form action="https://www.google.com/" method="post">
+                        <input placeholder="Buscar en google.es" maxlength="67">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--\/ Menu  Movil\/ -->
+    <div class="container-top-mobile">
+        <div class="color-background-3">
+            <div class="container-banner">
+                <div class="container-menu">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <i class="fa-solid fa-house" id="house-button-mobile-id"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <i class="fa-solid fa-magnifying-glass" id="searcher-button-mobile-id"></i>
+                                </td>
+                                <td>
+                                    <i class="fa-regular fa-user" id="menu13"></i>
+                                </td>
+                                <td>
+                                    <i class="fa-sharp fa-solid fa-bars" id="menu-button-mobile-id"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!--\/ Menu Searcher \/ -->
+        <div style="flex-direction: column;">
+            <div class="container-top">
+                <div class="slider-menu" id="slider-bar-mobile-id">
+                    <i class="fa-solid fa-magnifying-glass" style="color: white;"></i>
+                    <form method="post" action="https://www.google.com/">
+                        <input placeholder="Buscar en google.es" maxlength="67">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--\/ Hidden Menu \/ -->
+        <div class="menu-mobile" id="menu-mobile-id">
+            <div style="margin-left: 10vw;">
+                <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <h4>Tienda</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>Mac</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>iPad</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>iPhone</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>Watch</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>AirPods</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>TV y Casa</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>Entretenimiento</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>Accesorios</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>Soporte</h4>
+                                    </td>
+                                </tr>
+                            </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!--\/ Banners \/ -->
+    <div class="container-medium">
+        <div class="color-background-1">
+            <div class="container-banner">
+                <div class="container-text">
+                    <div class="container-text">
+                        <br> <br>
+                        <h2 class="text-center">Contenido</h2>
+                        <h2 class="text-center">Contenido</h2>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <h3>Texto <i class="fa-solid fa-chevron-right"></i></h3>
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <h3>Texto <i class="fa-solid fa-chevron-right"></i></h3>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-banner">
+                <img src="img/banner-02.jpg" alt="banner-02">
+            </div>
+        </div>
+
+        <div class="color-background-4">
+            <div class="container-banner">
+                <div class="container-text">
+                    <br>
+                    <h1 class="text-center">Contenido</h1>
+                    <h2 class="text-center">Contenido</h2>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <h3>Texto ></h3>
+                                </td>
+                                <td></td>
+                                <td>
+                                    <h3>Texto ></h3>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+
+                <div class="container-banner">
+                    <img src="img/banner-01.jpg" alt="banner-01">
+                </div>
+            </div>
+        </div>
+
+        <div class="color-background-1">
+            <div class="container-banner">
+                <div class="container-text">
+                    <div class="container-text">
+                        <br>
+                        <h1 class="text-center">Contenido</h1>
+                        <h2 class="text-center">Contenido</h2>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <h3>Texto ></h3>
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <h3>Texto ></h3>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-banner">
+                <img src="img/banner-3.gif" alt="banner-03">
+            </div>
+        </div>
+    </div>
+
+    <!--\/ Cuerpo de la web \/-->
+    <div class="container-medium-2">
+        <div class="container-medium-2-banner">
+            <div>
+                <img src="img/apple-vision-pro.png" alt="banner-vision-pro">
+            </div>
+            <div>
+                <img src="img/apple-vision-pro.png" alt="banner-vision-pro">
+            </div>
+        </div>
+
+        <div class="container-medium-2-banner">
+            <div>
+                <img src="img/apple-vision-pro.png" alt="banner-vision-pro">
+            </div>
+            <div>
+                <img src="img/apple-vision-pro.png" alt="banner-vision-pro">
+            </div>
+        </div>
+
+        <div class="container-medium-2-banner">
+            <div>
+                <img src="img/apple-vision-pro.png" alt="banner-vision-pro">
+            </div>
+            <div>
+                <img src="img/apple-vision-pro.png" alt="banner-vision-pro">
+            </div>
+        </div>
+    </div>
+
+    <!--\/ Libreria de fotos Web\/ -->
+    <div style="overflow-x: hidden;" class="libreria-web">
+        <div class="marquee">
+            <div class="panel-sing" id="sing">
+                <div><img src="img/shot-08.jpg" alt="short-00" class="sing-normal-op" id="sing0"></div>
+                <div><img src="img/shot-01.jpg" alt="short-01" class="sing-normal-op" id="sing1"></div>
+                <div><img src="img/shot-02.jpg" alt="short-02" class="sing-normal-op" id="sing2"></div>
+                <div><img src="img/shot-03.jpg" alt="short-03" class="sing-normal-op" id="sing3"></div>
+                <div><img src="img/shot-04.jpg" alt="short-04" class="sing-normal-op" id="sing4"></div>
+                <div><img src="img/shot-05.jpg" alt="short-05" class="sing-normal-op" id="sing5"></div>
+                <div><img src="img/shot-06.jpg" alt="short-06" class="sing-normal-op" id="sing6"></div>
+                <div><img src="img/shot-07.jpg" alt="short-07" class="sing-normal-op" id="sing7"></div>
+                <div><img src="img/shot-08.jpg" alt="short-08" class="sing-normal-op" id="sing8"></div>
+                <div><img src="img/shot-01.jpg" alt="short-09" class="sing-normal-op" id="sing9"></div>
+                <div><img src="img/shot-02.jpg" alt="short-10" class="sing-normal-op" id="sing10"></div>
+                <div><img src="img/shot-03.jpg" alt="short-11" class="sing-normal-op" id="sing11"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--\/ Libreria de fotos movil\/ -->
+    <div style="overflow-x: hidden;" class="libreria-mobile">
+        <div class="marquee">
+            <div class="panel-sing" id="panel-sing-id">
+                <div><img src="img/panel-01.jpg" alt="panel-00" class="sing-normal-op" id="sing-0"></div>
+                <div><img src="img/panel-01.jpg" alt="panel-01" class="sing-normal-op" id="sing-1"></div>
+                <div><img src="img/panel-01.jpg" alt="panel-02" class="sing-normal-op" id="sing-2"></div>
+                <div><img src="img/panel-01.jpg" alt="panel-03" class="sing-normal-op" id="sing-3"></div>
+                <div><img src="img/panel-01.jpg" alt="panel-04" class="sing-normal-op" id="sing-4"></div>
+                <div><img src="img/panel-01.jpg" alt="panel-05" class="sing-normal-op" id="sing-5"></div>
+                <div><img src="img/panel-01.jpg" alt="panel-06" class="sing-normal-op" id="sing-6"></div>
+                <div><img src="img/panel-01.jpg" alt="panel-07" class="sing-normal-op" id="sing-7"></div>
+                <div><img src="img/panel-01.jpg" alt="panel-08" class="sing-normal-op" id="sing-8"></div>
+                <div><img src="img/panel-01.jpg" alt="panel-09" class="sing-normal-op" id="sing-9"></div>
+                <div><img src="img/panel-01.jpg" alt="panel-10" class="sing-normal-op" id="sing-10"></div>
+                <div><img src="img/panel-03.jpg" alt="panel-11" class="sing-normal-op" id="sing-11"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--\/ Contenido links \/ -->
+    <div class="container-low" style="margin-top: 0.5vw; background-color: rgb(245,245,247);">
+        <div class="container-low-margin-1">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <h4>Texto 1</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 2</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 3</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 4</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 5</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 6</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 7</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 8</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 9</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 10</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 11</p>
+                        </td>
+                    </tr>
+                    <tr style="margin-bottom: 0%;">
+                        <td>
+                            <h4><br>Texto 1</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 2</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="background-color: rgb(245,245,247);margin-top: 0.5vw;">
+            <table>
+                <tbody>
+                    <tr style="margin-bottom: 0%;">
+                        <td>
+                            <h4>Texto 1</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 2</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 3</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 4</p>
+                        </td>
+                    </tr>
+                    <tr style="margin-bottom: 0%;">
+                        <td>
+                            <h4><br>Texto 1</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 2</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 3</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 4</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 5</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 6</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 7</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 8</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 9</p>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+        <div style="background-color: rgb(245,245,247);margin-top: 0.5vw;">
+            <table>
+                <tbody>
+                    <tr style="margin-bottom: 0%;">
+                        <td>
+                            <h4>Texto 1</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 2</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 3</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 4</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 5</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 6</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 7</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 8</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 9</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 10</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 11</p>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+
+        <div style="background-color: rgb(245,245,247);margin-top: 0.5vw;">
+            <table>
+                <tbody>
+                    <tr style="margin-bottom: 0%;">
+                        <td>
+                            <h4>Texto 1</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 2</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 3</p>
+                        </td>
+                    </tr>
+                    <tr style="margin-bottom: 0%;">
+                        <td>
+                            <h4><br>Texto 1</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 2</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 3</p>
+                        </td>
+                    </tr>
+                    <tr style="margin-bottom: 0%;">
+                        <td>
+                            <h4><br>Texto 1</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 2</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 3</p>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+
+        <div class="container-low-margin-2">
+            <table>
+                <tbody>
+                    <tr style="margin-bottom: 0%;">
+                        <td>
+                            <h4>Shop and Learn</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Store</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 3</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 4</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 5</p>
+                        </td>
+                    </tr>
+                    <tr style="margin-bottom: 0%;">
+                        <td>
+                            <h4><br>Texto 1</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 2</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 3</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 4</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 5</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 6</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 7</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 8</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 9</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Texto 10</p>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+
+    <!--\/ Contenido inferior \/ -->
+    <div class="container-lower">
+
+        <div class="container-low-margin-2">
+            <p style="font-weight: 100; ">More ways to shop: Find an ***** ***** or other retailer near
+                you. Or call 1-800-**-*****.
+            </p>
+        </div>
+
+        <div style="background-color: rgb(245,245,247);">
+            <div class="container-low-margin-2">
+                <p style="font-weight: 100; ">Copyright © 2023 ***** Inc. All rights reserved.</p>
+            </div>
+
+            <div style="width: 60vw;"></div>
+            <div class="container-low-margin-2">
+                <p style="font-weight: 100;">España</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/javaS.js"></script>
+</body>
+
+</html>
+<!--
+    Contendo externo
+Web de ejemplo: https://www.apple.com : https://web.archive.org/web/20231017232700/https://www.apple.com/
+Iconos: fontawesome https://fontawesome.com
+Font: Noto Sans Korean https://fonts.google.com/noto/specimen/Noto+Sans+KR?preview.text=Iphon%2015&preview.text_type=custom#styles
+
+-->
