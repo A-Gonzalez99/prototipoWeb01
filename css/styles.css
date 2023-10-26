@@ -232,11 +232,11 @@
 
 @keyframes scroll {
     0% {
-        left: -25%;
+        left: -39%;
     }
 
     100% {
-        left: -440%;
+        left: -550%;
     }
 }
 

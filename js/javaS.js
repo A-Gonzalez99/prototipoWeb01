@@ -70,40 +70,51 @@ function menuMobile() {
 visiblePhoto = 1;
 opaquePhoto = visiblePhoto;
 
-const animated = document.getElementById("panel-sing-id");
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
 
-function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 
 carreteFotos(visiblePhoto);
 function carreteFotos(n) { taimer(n) }
 
 function taimer(n) {
+
     opaquePhoto = n + 1;
     pastPhoto = n - 1;
 
-    let s1 = document.getElementById("sing-" + n);
+    let s1 = document.getElementsByName("sing-" + n)[0];
     s1.className = "sing-efect-normal";
-    let s2 = document.getElementById("sing-" + opaquePhoto);
-    // s2.className = "sing-efect-op";
-    let s3 = document.getElementById("sing-" + pastPhoto);
-    s3.className = "sing-efect-op";
+    let s2 = document.getElementsByName("sing-" + pastPhoto)[0];
+    s2.className = "sing-efect-op";
+
+    let s3 = document.getElementsByName("sing-" + n)[1];
+    s3.className = "sing-efect-normal";
+    let s4 = document.getElementsByName("sing-" + pastPhoto)[1];
+    s4.className = "sing-efect-op";
 
     if (n == 9) {
         n = 1;
-        opaquePhoto = 1;
-        pastPhoto = 1;
+        opaquePhoto = n;
+        pastPhoto = n;
 
-        document.getElementById("sing" + 10).className = "sing-efect-op";
-        document.getElementById("sing" + 11).className = "sing-efect-op";
+        document.getElementsByName("sing" + 10)[0].className = "sing-efect-op";
+        document.getElementsByName("sing" + 11)[0].className = "sing-efect-op";
+
+        document.getElementsByName("sing" + "08")[1].className = "sing-efect-op";
+        document.getElementsByName("sing" + "09")[1].className = "sing-efect-op";
+        document.getElementsByName("sing" + 10)[1].className = "sing-efect-op";
+        document.getElementsByName("sing" + 11)[1].className = "sing-efect-op";
+
+        sleep(4744).then(() => { taimer(1) });
+        
     }
+    else{
 
-    opaquePhoto = n + 1
-    sleep(4744).then(() => { taimer(visiblePhoto) });
+        
+        opaquePhoto = n + 1
+        sleep(4744).then(() => { taimer(opaquePhoto) });
+    }
 }
 
-
-animated.addEventListener("animationend", () => {
-
-
-});
 
