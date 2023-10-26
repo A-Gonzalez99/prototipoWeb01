@@ -70,6 +70,7 @@ function menuMobile() {
 visiblePhoto = 1;
 opaquePhoto = visiblePhoto;
 
+//funcion sleep esta saca de un foto https://stackoverflow.com/questions/951021/what-is-the-javascript-version-of-sleep
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
