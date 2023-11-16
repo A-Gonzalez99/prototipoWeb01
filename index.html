@@ -19,14 +19,13 @@
                     <tbody>
                         <tr>
                             <td>
-                                <i class="fa-solid fa-house" id="house-button-id"></i>
+                                <i class="fa-solid fa-house" onclick='openWeb("index.html")'></i>
                             </td>
-                            <td id="meuTd2">
-                                <p class="color-texto-menu" id="store-button-id">Tienda</p>
-                            </td>
-                            <td>
-                                <p class="color-texto-menu">Mac</p>
-                            </td>
+                      
+                                <td style="border-right: 0px;"> <p class="color-texto-menu" onclick='openWeb("formulario.html")'>Exploler </p></td>
+                                <td style="border-left: 3px;"> <p style="font-size: 8px;"> New</p></td>
+
+                            
                             <td>
                                 <p class="color-texto-menu">iPad</p>
                             </td>
@@ -63,21 +62,7 @@
             </div>
         </div>
 
-        <!--\/ Menu Searcher \/ -->
-        <div style="flex-direction: column;">
-            <div class="slider-menu" id="slider-bar-id">
-                <div style="margin-left: 50vw;"></div>
-                <div>
-                    <i class="fa-solid fa-magnifying-glass" style="color: white;"></i>
-                </div>
-
-                <div style="height: 100vw;">
-                    <form action="https://www.google.com/" method="post">
-                        <input placeholder="Buscar en google.es" maxlength="67">
-                    </form>
-                </div>
-            </div>
-        </div>
+      
     </div>
 
     <!--\/ Menu  Movil\/ -->
@@ -89,7 +74,7 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <i class="fa-solid fa-house" id="house-button-mobile-id"></i>
+                                    <i class="fa-solid fa-house" onclick='openWeb("index.html")'></i>
                                 </td>
                             </tr>
                         </tbody>
@@ -99,12 +84,15 @@
                                 <td>
                                     <i class="fa-solid fa-magnifying-glass" id="searcher-button-mobile-id"></i>
                                 </td>
+
                                 <td>
                                     <i class="fa-regular fa-user" id="menu13"></i>
                                 </td>
+
                                 <td>
                                     <i class="fa-sharp fa-solid fa-bars" id="menu-button-mobile-id"></i>
                                 </td>
+
                             </tr>
                         </tbody>
                     </table>
@@ -112,26 +100,16 @@
             </div>
         </div>
 
-        <!--\/ Menu Searcher \/ -->
-        <div style="flex-direction: column;">
-            <div class="container-top">
-                <div class="slider-menu" id="slider-bar-mobile-id">
-                    <i class="fa-solid fa-magnifying-glass" style="color: white;"></i>
-                    <form method="post" action="https://www.google.com/">
-                        <input placeholder="Buscar en google.es" maxlength="67">
-                    </form>
-                </div>
-            </div>
-        </div>
+      
 
         <!--\/ Hidden Menu \/ -->
         <div class="menu-mobile" id="menu-mobile-id">
             <div style="margin-left: 10vw;">
                 <table>
                             <tbody>
-                                <tr>
-                                    <td>
-                                        <h4>Tienda</h4>
+                                <tr style="margin-right: 10px;">              
+                                    <td> 
+                                        <h4 onclick='openWeb("formulario.html")'>Exploler</h4>
                                     </td>
                                 </tr>
                                 <tr>
@@ -192,18 +170,18 @@
                 <div class="container-text">
                     <div class="container-text">
                         <br> <br>
-                        <h2 class="text-center">Contenido</h2>
-                        <h2 class="text-center">Contenido</h2>
+                        <h1 class="text-center">MetaHuman</h1>
+                        <h2 class="text-center">Humanos digitales fotorrealistas fáciles de crear</h2>
                         <table>
                             <tbody>
                                 <tr>
                                     <td></td>
                                     <td>
-                                        <h3>Texto <i class="fa-solid fa-chevron-right"></i></h3>
+                                        <h3 onclick='openWeb("https://www.unrealengine.com/es-ES/metahuman")'>Más información <i class="fa-solid fa-chevron-right"></i></h3>
                                     </td>
                                     <td></td>
                                     <td>
-                                        <h3>Texto <i class="fa-solid fa-chevron-right"></i></h3>
+                                        <h3>Compartir <i class="fa-solid fa-chevron-right"></i></h3>
                                     </td>
                                 </tr>
                             </tbody>
@@ -222,18 +200,18 @@
             <div class="container-banner">
                 <div class="container-text">
                     <br>
-                    <h1 class="text-center">Contenido</h1>
-                    <h2 class="text-center">Contenido</h2>
+                    <h1 class="text-center">Meta Quest</h1>
+                    <h2 class="text-center">Sumérgete como nunca antes con gráficos increíbles </h2>
                     <table>
                         <tbody>
                             <tr>
                                 <td></td>
                                 <td>
-                                    <h3>Texto ></h3>
+                                    <h3 onclick='openWeb("https://fontawesome.com/")'>Más información <i class="fa-solid fa-chevron-right"></i></h3>
                                 </td>
                                 <td></td>
                                 <td>
-                                    <h3>Texto ></h3>
+                                    <h3>Compartir <i class="fa-solid fa-chevron-right"></i></h3>
                                 </td>
                             </tr>
                         </tbody>
@@ -252,18 +230,18 @@
                 <div class="container-text">
                     <div class="container-text">
                         <br>
-                        <h1 class="text-center">Contenido</h1>
-                        <h2 class="text-center">Contenido</h2>
+                        <h1 class="text-center">Nuke 15.0</h1>
+                        <h2 class="text-center">Nuke es la poderosa herramienta de composición basada en nodos en el corazón de la familia Nuke.</h2>
                         <table>
                             <tbody>
                                 <tr>
                                     <td></td>
                                     <td>
-                                        <h3>Texto ></h3>
+                                        <h3 onclick='openWeb("https://www.foundry.com/products/nuke-family/nuke")'>Más información <i class="fa-solid fa-chevron-right"></i></h3>
                                     </td>
                                     <td></td>
                                     <td>
-                                        <h3>Texto ></h3>
+                                        <h3>Compartir <i class="fa-solid fa-chevron-right"></i></h3>
                                     </td>
                                 </tr>
                             </tbody>
@@ -282,28 +260,46 @@
     <div class="container-medium-2">
         <div class="container-medium-2-banner">
             <div>
-                <img src="img/apple-vision-pro.png" alt="banner-vision-pro">
+                <img src="img/banner2-01.jpg" alt="banner-vision-pro">
             </div>
             <div>
-                <img src="img/apple-vision-pro.png" alt="banner-vision-pro">
-            </div>
-        </div>
-
-        <div class="container-medium-2-banner">
-            <div>
-                <img src="img/apple-vision-pro.png" alt="banner-vision-pro">
-            </div>
-            <div>
-                <img src="img/apple-vision-pro.png" alt="banner-vision-pro">
+                <img src="img/banner2-02.jpg" alt="banner-vision-pro">
             </div>
         </div>
 
         <div class="container-medium-2-banner">
             <div>
-                <img src="img/apple-vision-pro.png" alt="banner-vision-pro">
+                <img src="img/banner2-03.jpg" alt="banner-vision-pro">
             </div>
             <div>
-                <img src="img/apple-vision-pro.png" alt="banner-vision-pro">
+                <img src="img/banner2-04.jpg" alt="banner-vision-pro">
+            </div>
+        </div>
+
+        <div class="container-medium-2-banner">
+            <div>
+                <img src="img/banner2-05.jpg" alt="banner-vision-pro">
+            </div>
+            <div>
+                <img src="img/banner2-06.jpg" alt="banner-vision-pro">
+            </div>
+        </div>
+        
+        <div class="container-medium-2-banner">
+            <div>
+                <img src="img/banner2-07.jpg" alt="banner-vision-pro">
+            </div>
+            <div>
+                <img src="img/banner2-08.jpg" alt="banner-vision-pro">
+            </div>
+        </div>
+        
+        <div class="container-medium-2-banner">
+            <div>
+                <img src="img/banner2-09.jpg" alt="banner-vision-pro">
+            </div>
+            <div>
+                <img src="img/banner2-10.jpg" alt="banner-vision-pro">
             </div>
         </div>
     </div>
@@ -355,67 +351,67 @@
                 <tbody>
                     <tr>
                         <td>
-                            <h4>Texto 1</h4>
+                            <h4>Valores de Apple</h4>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 2</p>
+                            <p>Accesibilidad</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 3</p>
+                            <p>Privacidad</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 4</p>
+                            <p>Responsabilidad de proveedores</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 5</p>
+                            <p>Acerca de Apple</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 6</p>
+                            <p>Newsroom</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 7</p>
+                            <p>Directivos de Apple</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 8</p>
+                            <p>Oportunidades laborales</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 9</p>
+                            <p>Garantía</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 10</p>
+                            <p>Inversores</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 11</p>
+                            <p>Ética y conducta</p>
                         </td>
                     </tr>
                     <tr style="margin-bottom: 0%;">
                         <td>
-                            <h4><br>Texto 1</h4>
+                            <h4><br>Salud</h4>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 2</p>
+                            <p>Apple en el sector sanitario</p>
                         </td>
                     </tr>
                 </tbody>
@@ -427,67 +423,67 @@
                 <tbody>
                     <tr style="margin-bottom: 0%;">
                         <td>
-                            <h4>Texto 1</h4>
+                            <h4>Educación</h4>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 2</p>
+                            <p>Apple en la educación</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 3</p>
+                            <p>Compras para la universidad</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 4</p>
+                            <p>Apple en el sector sanitario</p>
                         </td>
                     </tr>
                     <tr style="margin-bottom: 0%;">
                         <td>
-                            <h4><br>Texto 1</h4>
+                            <h4><br>Empresas</h4>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 2</p>
+                            <p>Apple y las empresas</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 3</p>
+                            <p>Compras de empresa</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 4</p>
+                            <p>Ayuda para comprar</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 5</p>
+                            <p>Estado del pedido</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 6</p>
+                            <p>Financiación</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 7</p>
+                            <p>Apple Trade In</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 8</p>
+                            <p>Reacondicionados certificados</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 9</p>
+                            <p>App Apple Store</p>
                         </td>
                     </tr>
                 </tbody>
@@ -500,57 +496,57 @@
                 <tbody>
                     <tr style="margin-bottom: 0%;">
                         <td>
-                            <h4>Texto 1</h4>
+                            <h4>Apple Store</h4>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 2</p>
+                            <p>Encontrar una tienda</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 3</p>
+                            <p>Genius Bar</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 4</p>
+                            <p>Today at Apple</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 5</p>
+                            <p>Campamento de Apple</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 6</p>
+                            <p>App Apple Store</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 7</p>
+                            <p>Reacondicionados certificados</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 8</p>
+                            <p>Apple Trade In</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 9</p>
+                            <p>Financiación</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 10</p>
+                            <p>Estado del pedido</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 11</p>
+                            <p>Ayuda para comprar</p>
                         </td>
                     </tr>
 
@@ -564,47 +560,47 @@
                 <tbody>
                     <tr style="margin-bottom: 0%;">
                         <td>
-                            <h4>Texto 1</h4>
+                            <h4>Cuentas</h4>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 2</p>
+                            <p>Gestionar ID de Apple</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 3</p>
+                            <p>Cuenta del Apple Store</p>
                         </td>
                     </tr>
                     <tr style="margin-bottom: 0%;">
                         <td>
-                            <h4><br>Texto 1</h4>
+                            <h4><br>Cartera de Apple</h4>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 2</p>
+                            <p>Apple Pay</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 3</p>
+                            <p>iCloud.com</p>
                         </td>
                     </tr>
                     <tr style="margin-bottom: 0%;">
                         <td>
-                            <h4><br>Texto 1</h4>
+                            <h4><br>Store</h4>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 2</p>
+                            <p>Ver y comprar</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 3</p>
+                            <p>Tienda</p>
                         </td>
                     </tr>
 
@@ -628,67 +624,67 @@
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 3</p>
+                            <p>Mac</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 4</p>
+                            <p>iPad</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 5</p>
+                            <p>iPhone</p>
                         </td>
                     </tr>
                     <tr style="margin-bottom: 0%;">
                         <td>
-                            <h4><br>Texto 1</h4>
+                            <h4><br>Watch</h4>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 2</p>
+                            <p>AirPods</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 3</p>
+                            <p>TV y Casa</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 4</p>
+                            <p>AirTag</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 5</p>
+                            <p>Tarjetas regalo</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 6</p>
+                            <p>Cartera de Apple</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 7</p>
+                            <p>Newsroom</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 8</p>
+                            <p>Privacidad</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 9</p>
+                            <p>Compras de empresa</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Texto 10</p>
+                            <p>App Apple Store</p>
                         </td>
                     </tr>
                 </tbody>

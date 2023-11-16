@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploler</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body id="body">
+
+    <!--\/ Menu Desk \/ -->
+    <div class="container-top-desk">
+        <div class="color-background-3">
+            <div class="container-menu">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <i class="fa-solid fa-house" onclick='openWeb("index.html")'></i>
+                            </td>
+                      
+                                <td style="border-right: 0px;"> <p class="color-texto-menu" onclick='openWeb("formulario.html")'>Exploler </p></td>
+                                <td style="border-left: 3px;"> <p style="font-size: 8px;"> New</p></td>
+
+                            
+                            <td>
+                                <p class="color-texto-menu">iPad</p>
+                            </td>
+                            <td>
+                                <p class="color-texto-menu">iPhone</p>
+                            </td>
+                            <td>
+                                <p class="color-texto-menu">Wach</p>
+                            </td>
+                            <td>
+                                <p class="color-texto-menu">AirPods</p>
+                            </td>
+                            <td>
+                                <p class="color-texto-menu">TV y Casa</p>
+                            </td>
+                            <td>
+                                <p class="color-texto-menu">Entretenimiento</p>
+                            </td>
+                            <td>
+                                <p class="color-texto-menu">Accesorios</p>
+                            </td>
+                            <td>
+                                <p class="color-texto-menu">Soporte</p>
+                            </td>
+                            <td>
+                                <i class="fa-solid fa-magnifying-glass" id="searcher-button-id"></i>
+                            </td>
+                            <td>
+                                <i class="fa-regular fa-user"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!--\/ Menu Searcher \/ -->
+        <div style="flex-direction: column;">
+            <div class="slider-menu" id="slider-bar-id">
+                <div style="margin-left: 50vw;"></div>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass" style="color: white;"></i>
+                </div>
+
+                <div style="height: 100vw;">
+                    <form action="https://www.google.com/" method="post">
+                        <input placeholder="Buscar en google.es" maxlength="67">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--\/ Menu  Movil\/ -->
+    <div class="container-top-mobile">
+        <div class="color-background-3">
+            <div class="container-banner">
+                <div class="container-menu">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <i class="fa-solid fa-house" onclick='openWeb("index.html")'></i>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <i class="fa-solid fa-magnifying-glass" id="searcher-button-mobile-id"></i>
+                                </td>
+
+                                <td>
+                                    <i class="fa-regular fa-user" id="menu13"></i>
+                                </td>
+
+                                <td>
+                                    <i class="fa-sharp fa-solid fa-bars" id="menu-button-mobile-id"></i>
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+      
+
+        <!--\/ Hidden Menu \/ -->
+        <div class="menu-mobile" id="menu-mobile-id">
+            <div style="margin-left: 10vw;">
+                <table>
+                            <tbody>
+                                <tr style="margin-right: 10px;">              
+                                    <td> 
+                                        <h4 onclick='openWeb("formulario.html")'>Exploler</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>Mac</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>iPad</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>iPhone</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>Watch</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>AirPods</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>TV y Casa</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>Entretenimiento</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>Accesorios</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>Soporte</h4>
+                                    </td>
+                                </tr>
+                            </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+
+    <div class="container-medium">
+        <div class="form-div-all-content">
+            <div class="form-div-content">
+                <h2>Exploler</h2>
+
+                <!-- Form menu Web -->
+                <div class="form-menu-web">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#addNewPanelModel">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+
+                    <button type="button" class="btn btn-primary">
+                        <i class="fa-solid fa-heart"></i>
+                    </button>
+
+                    <button type="button" class="btn btn-primary">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+
+                <ul id="panles-list" style="display: flex;">
+
+                    <div class="form-background">
+                        <!--Contenido-->
+
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Add Panel -->
+    <div class="modal fade" id="addNewPanelModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add content</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div>
+                        <div>
+                            <form action="formulario.html">
+                                <div class="form-div-model-background">
+                                    <label for="user" style="margin-left: 1%">User:</label>
+                                    <span id="userError" style="visibility: hidden; color: red;">Fild Requiere</span>
+                                    <br>
+                                    <input type="text" id="user-new-panel" placeholder="User name" name="user"
+                                        class="form-text-coment">
+                                </div>
+                                <br>
+
+                                <div class="form-div-model-background">
+                                    <div style="margin-left: 1%; margin-top: 1%;">
+                                        <button type="button" onclick="updateImg(0)">
+                                            <i class='fa-solid fa-upload'></i>
+                                        </button>
+                                        <input type="file" id="img-new-panel" name="img-new-panel"
+                                            accept="image/png, image/jpeg" />
+                                        <br>
+                                        <span style="visibility: visible; color: red;">Option not implemented at the
+                                            moment</span>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="form-div-model-background">
+                                    <label for="coment" class="form-label" style="margin-left: 1%;">Coment:</label>
+                                    <span id="comentError" style="visibility: hidden; color: red;">Fild Requiere</span>
+                                    <br>
+                                    <textarea id="coment-new-panel" placeholder="Enter coment"
+                                        class="form-text-coment"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" id="submitNewPanel" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form menu mobile -->
+    <div class="form-menu-mobile-container">
+        <div class="form-menu-mobile">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addNewPanelModel">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+
+            <button type="button" class="btn btn-primary">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+
+            <button type="button" class="btn btn-primary">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/5d2931d4ec.js" crossorigin="anonymous"></script>
+    <script src="js/javaS.js"></script>
+
+</body>
+
+</html>
