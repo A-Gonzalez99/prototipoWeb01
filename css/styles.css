@@ -3,8 +3,8 @@
 * {
     margin: 0;
     padding: 0;
+    /* max-width: 100%;
     /* max-height: 100%; */
-
     box-sizing: content-box;
     font-family: 'Noto Sans KR', sans-serif;
     /*
@@ -29,7 +29,7 @@
     top: 40px;
     position: fixed;
     background-color: rgb(18, 18, 18);
-    z-index: 1;
+    z-index: 10000;
     visibility: hidden;
 }
 
@@ -56,11 +56,17 @@
     max-width: 100%;
     z-index: 2;
     visibility: visible;
+    width: 100vw;
 }
 
 .container-medium {
     width: 100vw;
     max-width: 100%;
+}
+.container-medium-fav {
+    width: 100vw;
+    max-width: 100%;
+    display: flex; justify-content: space-evenly;justify-content: center;
 }
 
 .container-low {
@@ -104,12 +110,14 @@
 }
 
 .container-medium-2 {
-    max-width: 100%;
+    max-width: 100vw;
     display: flex;
     flex-direction: column;
     margin-left: 0.5vw;
     justify-content: space-evenly;
 }
+
+.container-medium-2 img{max-width: 100vw;}
 
 .container-medium-2-banner {
     width: 100vw;
@@ -640,6 +648,260 @@ h3 {
     margin-bottom: 1%;
 }
 
+p{
+    margin-bottom: 0px;
+}
+
+
+.wallpaper-div{
+    width: 100%;
+    height: 100%; 
+    position: absolute; 
+    overflow: hidden; 
+    justify-content: center; 
+    align-items: center; 
+    display: flex;
+}
+
+
+
+.welcome-wallpaper{
+    animation: anim-welcome-wallpaper-load 2s ease 1;
+    width: 160vw;    
+    height: auto;
+}
+
+.welcome-wallpaper2{
+    animation: anim-welcome-wallpaper-load 2s ease 1;
+    background-color: transparent;
+    width: 160vw;    
+    height: auto;
+
+}
+
+@keyframes anim-welcome-wallpaper-load {
+    0% {
+        width: 170vw;    
+        color: blue;
+    }
+
+    100% {
+      
+        color: transparent;
+        width: 160vw;    
+        
+    }
+}
+
+.welcome-wallpaper-anim-0{animation: anim-welcome-wallpaper-0 3s ease 1; width: 150vw;
+}
+@keyframes anim-welcome-wallpaper-0 {
+    0% {
+        width: 160vw;    
+    }
+
+    100% {
+        width: 150vw;    
+    }
+}
+
+.welcome-wallpaper-anim-1{animation: anim-welcome-wallpaper-1 3s ease 1; width: 140vw; 
+}
+@keyframes anim-welcome-wallpaper-1 {
+    0% {
+        width: 150vw;
+
+    }
+
+    100% {
+        width: 140vw;
+
+    }
+}
+
+.welcome-wallpaper-anim-2{animation: anim-welcome-wallpaper-2 3s ease 1; width: 150vw; 
+ }
+@keyframes anim-welcome-wallpaper-2 {
+    0% {
+        width: 140vw;
+
+    }
+
+    100% {
+        width: 150vw;
+
+    }
+
+}
+
+.welcome-wallpaper-anim-3{animation: anim-welcome-wallpaper-3 3s ease 1; width: 160vw; 
+ }
+@keyframes anim-welcome-wallpaper-3 {
+    0% {
+        width: 150vw;
+    }
+
+    100% {
+        width: 160vw;
+    }
+}
+
+
+.welcome-wallpaper-ef{
+    width: 10000vw; 
+    
+    scale: 10000%;
+    background-color: transparent;
+}
+
+
+
+.welcome-anim-0{animation: anim-wallpaper-0 2s ease 1;         width: 700vw;}
+@keyframes anim-wallpaper-0 {
+    0% {
+        width: 10000vw; 
+    }
+
+    100% {
+        width: 700vw; 
+    }
+}
+
+.welcome-anim-1{animation: anim-wallpaper-1 3s ease 1; width: 120vw;background-color: white}
+@keyframes anim-wallpaper-1 {
+    0% {
+        width: 700vw; 
+        background-color: transparent;
+    }
+
+    100% {
+        width: 120vw; 
+        background-color: white;
+    }
+}
+
+.welcome-anim-2{animation: anim-wallpaper-2 1s ease 1; width: 700vw;}
+@keyframes anim-wallpaper-2 {
+    0% {
+        width: 150vw; 
+        background-color: white;
+    }
+
+    100% {
+        width: 700vw; 
+        background-color: transparent;
+    }
+}
+
+.welcome-anim-3{animation: anim-wallpaper-3 3s ease 1;  width: 10000vw;}
+@keyframes anim-wallpaper-3 {
+    0% {
+        width: 700vw; 
+    }
+
+    100% {
+        width: 10000vw; 
+    }
+}
+
+.welcome-anim-4{position: relative; animation: anim-wallpaper-4 3s ease 1;  scale: 10000%; background-color: transparent; 
+}
+@keyframes anim-wallpaper-4 {
+   0% {
+       scale: 40%;
+       background-color: white
+
+   }
+
+   100% {
+       scale: 10000%;
+       background-color: transparent
+   }
+}
+
+.boton-play-div{
+    background-color: transparent; width: 100vw; height: 100vh; justify-content: center; 
+    align-items: center; display: flex;position: absolute; z-index: 1000; scale: 100%;animation: boton-play-div-anim-load 0.5s ease 1;
+}
+
+@keyframes boton-play-div-anim-load {
+   0% {
+    scale: 0%;
+   }
+
+   100% {
+    scale: 100%;
+ 
+   }
+}
+
+.boton-play-div-end{
+animation: boton-play-div-anim-end 1s ease 1;background-color: transparent; width: 100vw; height: 100vh; justify-content: center; 
+align-items: center; display: flex;position: absolute; z-index: 1000; scale: 0%;
+}
+
+@keyframes boton-play-div-anim-end {
+   0% {
+    scale: 100%;
+   
+   }
+
+   100% {
+    scale: 0%;
+ 
+   }
+}
+
+
+
+
+.boton-play-div :hover{
+    scale: 110%;
+}
+
+
+
+
+.welcome-panel-top{
+    position: fixed; 
+    width: 100vw; 
+    height: 100vh; 
+    z-index: 10; 
+    justify-content: center; 
+    align-items: center; 
+    display: flex;
+    visibility: hidden;    
+    background-color: transparent;
+}
+
+
+
+.welcome-panel-anim-top{ animation: anim-welcome-panel 4s ease 1; visibility: hidden;
+}
+@keyframes anim-welcome-panel {
+   0% {
+    visibility: visible;
+   }
+
+   100% {
+       visibility: hidden;
+
+   }
+}
+
+
+.welcome-panel{
+    width: 100%;
+    height: 100%;
+    z-index: 11; 
+    overflow: hidden; 
+    justify-content: center; 
+    align-items: center; 
+    display: flex;
+    background-color: transparent;
+
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .container-medium-2-banner {
@@ -657,6 +919,7 @@ h3 {
         position: fixed;
         visibility: visible;
     }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -676,6 +939,7 @@ h3 {
         height: 35vw;
         background-color: #f6f6f6;
     }
+ 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -755,7 +1019,7 @@ h3 {
         visibility: hidden;
         background-color: rgb(18, 18, 18);
     }
-
+ 
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -842,13 +1106,16 @@ h3 {
         margin-left: auto;
     
     }
+    .welcome-panel-top{
+   
+        visibility: visible;    
+      
+    }
 
-}
-
-
-
-p{
-    margin-bottom: 0px;
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+}
+
+
+

@@ -11,6 +11,29 @@
 </head>
 
 <body>
+        <!--\/Panel Welcome\/ -->
+    <div class="welcome-panel-top" id="panelWelcome" onmousemove="updateDisplay(event)">
+        <div class="welcome-panel" id="welcome-panel">
+            <img src="img/welcome2IMG.png" alt="" id="img-welcome2" class="welcome-wallpaper-ef" style="position: absolute;">
+            
+        </div>
+
+        <div class="boton-play-div" id="div-boton-play" >
+            <i onclick='openWeb("https://www.youtube.com/watch?v=trAguo1iC2Q")' class="fa-solid fa-circle-play" style="z-index: 100; font-size: 100px; color: white; margin-top: 45px;"></i>
+         
+        </div>
+
+        <div class="wallpaper-div">
+            
+            <img src="img/WallpaperChar.png" alt="" class="welcome-wallpaper2" id="img-welcome-char" style="z-index: 5;">
+        </div>
+        <div class="wallpaper-div">
+            
+            <img src="img/wallpaperFondo.jpeg" alt="" class="welcome-wallpaper" id="img-welcome-fondo">
+        </div>
+
+    </div>
+
     <!--\/ Menu Desk \/ -->
     <div class="container-top-desk">
         <div class="color-background-3">
@@ -27,29 +50,30 @@
 
                             
                             <td>
-                                <p class="color-texto-menu">iPad</p>
+                                <p class="color-texto-menu" onclick='openWeb("https://www.maxon.net/es/zbrush")'>Maxon</p>
                             </td>
                             <td>
-                                <p class="color-texto-menu">iPhone</p>
+                                <p class="color-texto-menu" onclick='openWeb("https://www.autodesk.es/collections/media-entertainment/animation?term=1-YEAR&tab=subscription")'>Autodesk</p>
                             </td>
                             <td>
-                                <p class="color-texto-menu">Wach</p>
+                                <p class="color-texto-menu" onclick='openWeb("https://www.blender.org/about/")'>Blender</p>
                             </td>
                             <td>
-                                <p class="color-texto-menu">AirPods</p>
+                                <p class="color-texto-menu" onclick='openWeb("https://www.unrealengine.com/es-ES/unreal-engine-5")'>Unreal Engine</p>
                             </td>
                             <td>
-                                <p class="color-texto-menu">TV y Casa</p>
+                                <p class="color-texto-menu" onclick='openWeb("https://unity.com/es/solutions/unity-weta-tools")'>Unity</p>
                             </td>
                             <td>
-                                <p class="color-texto-menu">Entretenimiento</p>
+                                <p class="color-texto-menu" onclick='openWeb("https://www.foundry.com/products/nuke-family/nuke")'>Foundry</p>
                             </td>
                             <td>
-                                <p class="color-texto-menu">Accesorios</p>
+                                <p class="color-texto-menu" onclick='openWeb("https://www.sidefx.com/industries/filmtv/")'>Sidefx</p>
                             </td>
                             <td>
-                                <p class="color-texto-menu">Soporte</p>
+                                <p class="color-texto-menu" onclick='openWeb("https://www.adobe.com/es/creativecloud/3d-ar.html")'>Adobe</p>
                             </td>
+                          
                             <td>
                                 <i class="fa-solid fa-magnifying-glass" id="searcher-button-id"></i>
                             </td>
@@ -61,8 +85,6 @@
                 </table>
             </div>
         </div>
-
-      
     </div>
 
     <!--\/ Menu  Movil\/ -->
@@ -114,47 +136,42 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <h4>Mac</h4>
+                                        <h4 onclick='openWeb("https://www.maxon.net/es/zbrush")'>Maxon</h4>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <h4>iPad</h4>
+                                        <h4 onclick='openWeb("https://www.autodesk.es/collections/media-entertainment/animation?term=1-YEAR&tab=subscription")'>Autodesk</h4>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <h4>iPhone</h4>
+                                        <h4 onclick='openWeb("https://www.blender.org/about/")'>Blender</h4>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <h4>Watch</h4>
+                                        <h4 onclick='openWeb("https://www.unrealengine.com/es-ES/unreal-engine-5")'>Unreal Engine</h4>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <h4>AirPods</h4>
+                                        <h4 onclick='openWeb("https://unity.com/es/solutions/unity-weta-tools")'>Unity</h4>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <h4>TV y Casa</h4>
+                                        <h4 onclick='openWeb("https://www.foundry.com/products/nuke-family/nuke")'>Foundry</h4>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <h4>Entretenimiento</h4>
+                                        <h4 onclick='openWeb("https://www.sidefx.com/industries/filmtv/")'>Sidefx</h4>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <h4>Accesorios</h4>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <h4>Soporte</h4>
+                                        <h4 onclick='openWeb("https://www.adobe.com/es/creativecloud/3d-ar.html")'>Adobe</h4>
                                     </td>
                                 </tr>
                             </tbody>
@@ -165,6 +182,17 @@
 
     <!--\/ Banners \/ -->
     <div class="container-medium">
+        <div style="background-color: #101010; align-items: center; display: flex;justify-content: space-evenly;justify-content: center;">
+
+                <img src="img/lowRe.jpg" alt="" style="margin-left: 35vw;width: auto; height: 300px; margin-top: 6vh;">
+                <div style="margin-right: 30vw; border-color: red; border: 1px red; margin-top: 6vh; margin-bottom: 5vh;">
+                    <h1 style="color: white;">ZBrush 2024 New Features!</h1>
+                    <p style="color: white;margin-top: 10px;">ZBrush is the industry standard digital sculpting software. The latest version features an updated Anchors Brush system which provides an intuitive way to deform meshes by applying anchors onto a mesh while allowing for actions to be performed.</p>         
+                    <p onclick='openWeb("https://www.youtube.com/watch?v=trAguo1iC2Q")' style="color: white; margin-top: 10px;">View new features <i class="fa-solid fa-chevron-right"></i></p>
+                    
+                </div>
+        </div>  
+        
         <div class="color-background-1">
             <div class="container-banner">
                 <div class="container-text">

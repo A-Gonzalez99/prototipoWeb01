@@ -5,49 +5,148 @@ let panels = [
         user: "ROOM 8 STUDIO",
         img: "img/explorer/ROOM9STUDIO-img01.jpg",
         coment: "We are proud to present latest works of our amazing Grooming team! Do not miss our unique hairstyles created with haircards and particle",
-        like: "25"
+        like: "25",
+        id: 1
     },
     {
         user: "Davimir",
         img: "img/explorer/Davimir-img01.jpg",
         coment: "I’d like to share a remake of a VFX that I couldn’t bring to life in the way I envisioned. Now that I’ve improved my skills, I wanted to revisit that project and complete it, and this is the result. I hope you like it (I’m open to any feedback).",
-        like: "1568"
-
-
+        like: "1568",
+        id: 2
     },
     {
         user: "Luke Starkie",
         img: "img/explorer/Luke-Starkie-img01.jpg",
         coment: "An update of an old design I originally made in 2014",
-        like: "97"
-
+        like: "97",
+        id: 3
     },
     {
         user: "Mohandish",
         img: "img/explorer/Mohandish-img01.gif",
         coment: "Hey guys! This is a practice effect using Niagara. Feedback and ideas for this effect or new things to try next are all welcome!",
-        like: "23"
-
+        like: "23",
+        id: 4
     },
     {
         user: "Hideyuki Ashizawa",
         img: "img/explorer/Hideyuki-Ashizawa-img01.jpg",
         coment: "I am very excited to share my new digital drawing, 'The Dance of Life'. This work represents the joy and movement of life. I chose to use vibrant colors and flowing lines to create a feeling of energy and dynamism.",
-        like: "226"
-
+        like: "226",
+        id: 5
     },
     {
         user: "Unbyul",
         img: "img/explorer/Unbyul-img01.gif",
         coment: "Basic Wave Material tip [UnrealEngine5 Niagara]",
-        like: "5"
-
+        like: "5",
+        id: 6
     }
 
 ];
 
 visiblePhoto = 1;
 opaquePhoto = visiblePhoto;
+
+favlist = [];
+favlist = JSON.parse(localStorage.getItem("saveFavs"));
+
+window.scrollTo(0,-10000);
+
+loadW = true;
+var oldScrollY = window.scrollY;
+quitarw=true;
+
+count=1;
+
+//document.getElementById("div-boton-play").className = "boton-play-div-anim-load";
+numCount=11;
+function reveal() {
+
+    if (loadW == true ){
+        var reveals = document.querySelectorAll(".reveal");       
+        let panelWelcome = document.getElementById("panelWelcome");
+        let maxY = window.scrollMaxY;
+        if (oldScrollY < window.scrollY) {
+            //Down
+            if (102 == window.scrollY || 200 == window.scrollY || 100 == window.scrollY) {
+               
+                document.getElementById("img-welcome-char").className = "welcome-wallpaper-anim-0";
+                document.getElementById("img-welcome2").className = "welcome-anim-0";
+                document.getElementById("div-boton-play").className = "boton-play-div-end";
+                
+
+            }
+           
+            if (204 == window.scrollY || 400 == window.scrollY || 200 == window.scrollY) {
+                document.getElementById("img-welcome-char").className = "welcome-wallpaper-anim-1";
+                document.getElementById("img-welcome2").className = "welcome-anim-1";
+              
+
+            }
+            numCount--;
+        
+           //console.log(window.scrollY);
+        }
+
+        else {
+            //up
+            if (102 == window.scrollY || 200 == window.scrollY || 100 == window.scrollY) {
+                document.getElementById("img-welcome-char").className = "welcome-wallpaper-anim-2";
+                document.getElementById("img-welcome2").className = "welcome-anim-2";
+                document.getElementById("img-welcome-char").style.visibility = "visible";
+            }
+
+            if (0 == window.scrollY) {
+                document.getElementById("img-welcome-char").className = "welcome-wallpaper-anim-3";
+                document.getElementById("img-welcome2").className = "welcome-anim-3";
+                document.getElementById("div-boton-play").className = "boton-play-div";
+            }
+        }
+
+        if (306 == window.scrollY || 600 == window.scrollY || 300 == window.scrollY) {
+            loadW = false;
+            window.scrollBy(0, -10000);
+
+            document.getElementById("img-welcome-char").style.visibility = "hidden";
+            document.getElementById("img-welcome-fondo").style.visibility = "hidden";
+            document.getElementById("img-welcome2").className = "welcome-anim-4";
+            sleep(3000).then(() => { quitarWallpaper() });
+        }
+
+        oldScrollY = window.scrollY;
+        console.log(window.scrollY);
+        //console.log(loadW);
+    }
+}
+
+function updateDisplay(event) {
+    const angleX = parseInt(event.pageX / 100);
+    const angleY = parseInt(event.pageY / 100);
+
+    document.getElementById("img-welcome2").style.transform="rotateY("+angleX+ "deg)";
+    document.getElementById("img-welcome-char").style.transform="translate("+angleX*10+ "px,"+angleY*5 +"px)";
+    //document.getElementById("img-welcome-fondo").style.transform="translate("+angleX/10+ "px,"+angleY*9 +"px)";
+
+    //console.log(event.pageX+" "+event.pageY)
+}
+
+
+
+
+function quitarWallpaper(){
+
+    document.getElementById("panelWelcome").style.visibility="hidden";
+
+}
+
+function wallpaperF(){
+    count++;
+    reveal();
+   // console.log(count);
+
+}
 
 initialize();
 function initialize() {
@@ -56,21 +155,44 @@ function initialize() {
         const BICYCLE_FORM = document.getElementById("submitNewPanel");
         BICYCLE_FORM.addEventListener("click", addNewPanel);
         showPanels();
+        cargarFavoritos()
     }
 
     if (window.location.href.substr(-10) == "index.html") {
+        window.scrollBy(0, -10000);
         let storeButton = document.getElementById("store-button-id");
         carreteFotos(visiblePhoto);
+        //console.log(window.screen.availWidth);
 
+        window.visualViewport.addEventListener("resize", viewportHandler);
+      
     }
+
+    if (window.location.href.substr(-8) == "fav.html") {
+        console.log("Fav");
+        createPanelsFav();
+        cargarFavoritos()
+    }
+
+  
 }
 
-function openWeb(url) {open(url, "_self")}
+function viewportHandler(event) {
+    
+    scala=Math.round((window.outerWidth / window.innerWidth) * 100);
+        if (scala==101 || scala==100 || scala==141 || scala==103){
+            document.getElementById("panelWelcome").style.visibility="visible";
 
+            window.addEventListener("scroll", wallpaperF);
 
+        }
+        else{quitarWallpaper();}
+        
+        console.log(scala);
+  
+    }
 
-
-
+function openWeb(url) { open(url, "_self") }
 
 initializeMenuBottonMobil();
 function initializeMenuBottonMobil() {
@@ -82,28 +204,24 @@ function menuMobile() {
     let menuMobile = document.getElementById("menu-mobile-id");
 
     if (menuMobile.style.visibility == "hidden") {
-        menuMobile.style.zIndex=1;
+        menuMobile.style.zIndex = 1;
         menuMobile.style.visibility = "visible";
-        menuMobile.style.height= "100%";
-        menuMobile.style.marginTop="-10PX";
-
+        menuMobile.style.height = "100%";
+        menuMobile.style.marginTop = "-10PX";
     }
 
     else {
         menuMobile.style.visibility = "hidden";
-        menuMobile.style.zIndex=-1;
+        menuMobile.style.zIndex = -1;
 
     }
 }
-
-
 
 // La función sleep está sacada de un foro 
 // https://stackoverflow.com/questions/951021/what-is-the-javascript-version-of-sleep
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
-
 
 function carreteFotos(n) { taimer(n) }
 
@@ -160,15 +278,45 @@ function like(indexLike) {
     }
 }
 
+
+function cargarFavoritos() {
+    if (favlist[0] != null) {
+
+        for (x = 0; x < favlist.length; x++) {
+            for (y = 0; y < panels.length; y++) {
+                if (favlist[x] == panels[y].id) {
+                    document.getElementById("favClick" + favlist[x]).className = "fa-solid fa-heart-circle-minus";
+                }
+            }
+        }
+    }
+}
+
+
 function fav(indexFav) {
 
+    localStorage.setItem("saveFavs", JSON.stringify(favlist));
     if (document.getElementById("favClick" + indexFav).className != "fa-solid fa-heart-circle-minus") {
         document.getElementById("favClick" + indexFav).className = "fa-solid fa-heart-circle-minus";
+        favlist.push(panels[indexFav - 1].id);
+    }
 
-    }
     else {
-        document.getElementById("favClick" + indexFav).className = "fa-solid fa-heart-circle-plus";
+        x = 0;
+        console.log("Click");
+        for (x = 0; x < favlist.length; x++) {
+
+            if (favlist[x] == indexFav) {
+                document.getElementById("favClick" + indexFav).className = "fa-solid fa-heart-circle-plus";
+
+                favlist.splice(x, 1);
+                if (window.location.href.substr(-8) == "fav.html") {
+                    location.reload();
+                }
+            }
+        }
     }
+    localStorage.setItem("saveFavs", JSON.stringify(favlist));
 
 }
 
@@ -209,15 +357,13 @@ function updateNewContent(index) {
 
 }
 
-
-
 allPanels = "";
 function showPanels() {
     const BICYCLE_LIST = document.getElementById("panles-list");
     allPanels = "";
 
     for (let i = panels.length - 1; i > -1; i--) {
-        createPanel(i, panels[i].user, panels[i].img, panels[i].coment, panels[i].like);
+        createPanel(panels[i].id, panels[i].user, panels[i].img, panels[i].coment, panels[i].like);
 
     }
     BICYCLE_LIST.children[0].innerHTML = allPanels;
@@ -233,7 +379,8 @@ function addNewPanel(event) {
             user: USER,
             img: "img/default-image.jpg",
             coment: COMENT,
-            like: 0
+            like: 0,
+            id: panels.length + 1
 
         });
     }
@@ -252,7 +399,6 @@ function addNewPanel(event) {
 
     else {
         document.getElementById("comentError").style.visibility = "hidden";
-
     }
     showPanels();
 }
@@ -265,7 +411,6 @@ function deletePanel(index) {
     panels.splice(index, 1)
     showPanels();
 }
-
 
 function createPanel(index, user, img, coment, like) {
     const BICYCLE_LIST = document.getElementById("panles-list");
@@ -328,4 +473,27 @@ function createPanel(index, user, img, coment, like) {
     html += '</div></div></div></div></div></div></div>'
 
     allPanels = allPanels + html;
+}
+
+function createPanelsFav() {
+    allPanels = "";
+    favlist = JSON.parse(localStorage.getItem("saveFavs"));
+    if (favlist != "") {
+
+        for (let i = favlist.length - 1; i > -1; i--) {
+            for (x = 0; x < panels.length; x++) {
+                if (panels[x].id == favlist[i]) {
+                    createPanel(panels[x].id, panels[x].user, panels[x].img, panels[x].coment, panels[x].like);
+
+                }
+
+            }
+
+        }
+
+        //console.log(allPanels);
+        document.getElementById("favListDivContent").innerHTML = allPanels;
+    }
+
+    else { document.getElementById("favListDivContent").innerHTML = '<p>Sin favoritos</p>'; }
 }
