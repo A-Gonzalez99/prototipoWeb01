@@ -6,8 +6,8 @@ Update 07/12/2023
 This new update you can save explore posts to favorites. An animation has also been added to the index.
 
 ## Website To Replicate
-[apple.com](https://web.archive.org/web/20231017232700/https://www.apple.com/)
-
+- [apple.com](https://web.archive.org/web/20231017232700/https://www.apple.com/)
+- [rockstargames.com](https://www.rockstargames.com/es/VI)
 ## Getting Started
 - ⚠️ Website errors ⚠️
 - Search and hamburger buttons work on second click
