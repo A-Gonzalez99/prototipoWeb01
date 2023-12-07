@@ -1,7 +1,9 @@
 # Prototipe Web 1
 This is a web project that is based on the apple.com website, it is an approach to design with html, css and js
-Update 07/12/2023
+Update 16/11/2023
 A new page called explorer has been implemented where you can share and share works from the audiovisual world.
+Update 07/12/2023
+This new update you can save explore posts to favorites. An animation has also been added to the index.
 
 ## Website To Replicate
 [apple.com](https://web.archive.org/web/20231017232700/https://www.apple.com/)
